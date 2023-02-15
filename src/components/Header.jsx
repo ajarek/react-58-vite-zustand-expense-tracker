@@ -2,6 +2,17 @@ import React from 'react'
 import Store from '../store/Store'
 const Header = () => {
   const { amounts, addAmount, saveAmount } = Store()
+ const sumIncomes= () =>{
+      const allIncomes = [...amounts]
+     const all= allIncomes.filter(el=>el.amount>0).reduce((acc,item)=>acc+Number(item.amount),0)
+      return all
+    }
+ const sumExpense= () =>{
+      const allIncomes = [...amounts]
+     const all= allIncomes.filter(el=>el.amount<=0).reduce((acc,item)=>acc+Number(item.amount),0)
+      return all
+    }
+ 
   return (
     <div className='header'>
       <div className="title">
@@ -9,11 +20,11 @@ const Header = () => {
       </div>
       <div className="result-balance">
         <h2>Your balance</h2>
-        <h2><span>$</span><span>350.00</span></h2>
+        <h2><span>PLN</span><span>{(sumIncomes()+sumExpense()).toFixed(2)}</span></h2>
       </div>
       <div className="income-expense-card">
-        <div className="income"><h3>Income <span>400.00</span></h3></div>
-        <div className="expense"><h3>Expense <span>50.00</span></h3></div>
+        <div className="income"><h3>Income <span>{ sumIncomes().toFixed(2)}</span></h3></div>
+        <div className="expense"><h3>Expense <span>{sumExpense().toFixed(2)}</span></h3></div>
       </div>
     </div>
   )
