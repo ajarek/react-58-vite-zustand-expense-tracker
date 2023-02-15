@@ -20,7 +20,7 @@ const Header = () => {
       </div>
       <div className="result-balance">
         <h2>Your balance</h2>
-        <h2><span>PLN</span><span>{(sumIncomes()+sumExpense()).toFixed(2)}</span></h2>
+        <h2><span>PLN </span><span>{(sumIncomes()+sumExpense()).toFixed(2)}</span></h2>
       </div>
       <div className="income-expense-card">
         <div className="income"><h3>Income <span>{ sumIncomes().toFixed(2)}</span></h3></div>

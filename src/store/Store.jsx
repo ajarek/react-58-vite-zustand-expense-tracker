@@ -7,7 +7,10 @@ const Store = create((set) => ({
       amounts: [...state.amounts, amount],
     }))
   },
-  
+  removeAmount: (index) =>
+  set((state) => ({
+    amounts: state.amounts.filter((_, i) => i !== index),
+  })),
   
   saveAmount: () => {
     set((state) => {

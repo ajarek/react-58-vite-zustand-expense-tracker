@@ -56,6 +56,7 @@ margin-bottom: 1rem;
   border-left:1px solid #a4a5a7;
   border-top:1px solid #a4a5a7;
   margin-top: 1rem;
+  border-radius: 3px;
 }
 .header .income-expense-card .income,.header .income-expense-card .expense{
  width: 50%;
@@ -64,6 +65,7 @@ margin-bottom: 1rem;
  display: flex;
  flex-direction: column;
  padding: 0.5rem 0;
+ 
 }
 .header .income-expense-card .income{
   border-right: 1px solid; 
@@ -96,14 +98,37 @@ margin-bottom: 0.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  box-shadow: 1px 1px 1px 1px #515253;
   margin-bottom: 0.5rem;
   padding: 0.5rem ;
-  border-right:3px solid #03b278 ;
+  border: 1px solid #ccc;
   font-size: 1rem;
+  border-radius: 2px;
 }
-.history .wrapper-items .item:nth-child(2){
-  border-right:3px solid #ee3311 ;
+.history .wrapper-items .item button{
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #ee3311;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper-transaction{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.history .wrapper-items .item button:hover{
+  
+ 
+  border: 2px solid #ee3311;
+
 }
 .transaction{
   width: 100%;
@@ -118,17 +143,17 @@ margin-bottom: 0.5rem;
 .form input{
   width: 100%;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 16px;
   font-weight: 400;
   padding: 0 8px;
-  border: 1px solid #db3a3a;
+  border: 1px solid #ee3311;
   margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .form input[type='submit'] {
-  background: #db3a3a;
+  background: #ee3311;
   height: 38px;
   font-weight: 600;
   color: #fff;
