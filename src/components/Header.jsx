@@ -1,6 +1,7 @@
 import React from 'react'
-
+import Store from '../store/Store'
 const Header = () => {
+  const { amounts, addAmount, saveAmount } = Store()
   return (
     <div className='header'>
       <div className="title">

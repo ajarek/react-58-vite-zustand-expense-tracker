@@ -80,6 +80,9 @@ margin-bottom: 1rem;
   font-weight: 400;
   font-size: 1.1rem;
 }
+.history{
+  overflow: auto;
+}
 .history h4,.transaction h4{
 font-weight: 600;
 margin-bottom: 0.5rem;

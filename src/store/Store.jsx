@@ -15,6 +15,7 @@ const Store = create((set) => ({
       return { state }
     })
   },
+  
 }))
 
 export default Store

@@ -41,6 +41,7 @@ export const Form = ({ onSubmit }) => {
      
       <input
         type='number'
+        step={'0.01'}
         placeholder='Amount 50.00 or-50.00'
         {...register('amount')}
       />

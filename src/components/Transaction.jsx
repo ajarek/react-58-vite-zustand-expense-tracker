@@ -12,7 +12,6 @@ const Transaction = () => {
    addAmount(newData)
    saveAmount()
   }
-  console.log(amounts);
   return (
     <div className='transaction'>
       <h4>Add new transaction</h4>
