@@ -74,11 +74,11 @@ body {
   border-right: 1px solid;
 }
 .header .income-expense-card .income span {
-  color: #03b278;
+  color: #058258;
   display: block;
 }
 .header .income-expense-card .expense span {
-  color: #ee3311;
+  color: #d82404;
   display: block;
 }
 .header .income-expense-card h3 {
@@ -128,7 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  color: #ee3311;
+  color: #d82404;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -140,7 +140,7 @@ body {
   padding-left: 0.5rem;
 }
 .history .wrapper-items .item button:hover {
-  border: 2px solid #ee3311;
+  border: 2px solid #d82404;
 }
 .transaction {
   width: 100%;
@@ -159,13 +159,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding: 0 8px;
-  border: 1px solid #ee3311;
+  border: 1px solid #d82404;
   margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .form input[type='submit'] {
-  background: #ee3311;
+  background: #d82404;
   height: 38px;
   font-weight: 600;
   color: #fff;
@@ -175,10 +175,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .form input[type='submit']:hover {
-  background-color: #04b218;
+  background-color: #058258;
   font-size: 1rem;
 }
 .form p {
-  color: red;
+  color: #d82404;
   font-size: 0.8rem;
 }
