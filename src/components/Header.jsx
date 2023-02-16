@@ -2,15 +2,16 @@ import React from 'react'
 import Store from '../store/Store'
 const Header = () => {
   const { amounts, addAmount, saveAmount } = Store()
+
  const sumIncomes= () =>{
       const allIncomes = [...amounts]
-     const all= allIncomes.filter(el=>el.amount>0).reduce((acc,item)=>acc+Number(item.amount),0)
-      return all
+     const allSumIncomes= allIncomes.filter(el=>el.amount>0).reduce((acc,item)=>acc+Number(item.amount),0)
+      return allSumIncomes
     }
  const sumExpense= () =>{
-      const allIncomes = [...amounts]
-     const all= allIncomes.filter(el=>el.amount<=0).reduce((acc,item)=>acc+Number(item.amount),0)
-      return all
+      const allExpense = [...amounts]
+     const allSumExpense= allExpense.filter(el=>el.amount<=0).reduce((acc,item)=>acc+Number(item.amount),0)
+      return allSumExpense
     }
  
   return (
