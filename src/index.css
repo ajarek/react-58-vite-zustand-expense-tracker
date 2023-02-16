@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family:'Poppins', sans-serif ;
+body {
+  font-family: 'Poppins', sans-serif;
   background-color: #7f8c8d;
   width: 100vw;
   min-height: 100vh;
@@ -13,98 +13,98 @@ body{
   justify-content: center;
   align-items: center;
 }
-.App{
-
+.App {
   width: 320px;
   height: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem; 
-box-shadow: 1px 0px 5px 1px #515253;
-  background-color:#ecf0f1 ;
+  padding: 1rem;
+  box-shadow: 1px 0px 5px 1px #515253;
+  background-color: #ecf0f1;
   color: #2f3030;
 }
-.header,.history{
+.header,
+.history {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
-.header .title h1{
-font-weight:600 ;
-font-size:1.3rem ;
-margin-bottom: 1rem;
+.header .title h1 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
-.header .result-balance h2{
-  font-weight:500 ;
-  font-size:1.1rem ;
-  text-transform:uppercase;
-  
+.header .result-balance h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
-.header .result-balance h2 span{
-  font-size:1.3rem ;
+.header .result-balance h2 span {
+  font-size: 1.3rem;
   font-weight: 600;
 }
-.header .income-expense-card{
+.header .income-expense-card {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 2px 0px #515253;
-  border-left:1px solid #a4a5a7;
-  border-top:1px solid #a4a5a7;
+  border-left: 1px solid #a4a5a7;
+  border-top: 1px solid #a4a5a7;
   margin-top: 1rem;
   border-radius: 3px;
 }
-.header .income-expense-card .income,.header .income-expense-card .expense{
- width: 50%;
- text-align: center;
- text-transform: uppercase;
- display: flex;
- flex-direction: column;
- padding: 0.5rem 0;
- 
+.header .income-expense-card .income,
+.header .income-expense-card .expense {
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
 }
-.header .income-expense-card .income{
-  border-right: 1px solid; 
+.header .income-expense-card .income {
+  border-right: 1px solid;
 }
-.header .income-expense-card .income span{
-  color:#03b278;
+.header .income-expense-card .income span {
+  color: #03b278;
   display: block;
 }
-.header .income-expense-card .expense span{
-  color:#ee3311;
+.header .income-expense-card .expense span {
+  color: #ee3311;
   display: block;
 }
-.header .income-expense-card h3{
+.header .income-expense-card h3 {
   font-weight: 400;
   font-size: 1.1rem;
 }
-.history{
+.history {
   overflow: auto;
 }
-.history h4,.transaction h4{
-font-weight: 600;
-margin-bottom: 0.5rem;
+.history h4,
+.transaction h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
-.history .wrapper-items{
+.history .wrapper-items {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.history .wrapper-items .item{
+.history .wrapper-items .item {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  padding: 0.5rem ;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   font-size: 1rem;
   border-radius: 2px;
 }
-.history .wrapper-items .item button{
+.history .wrapper-items .item button {
   width: 28px;
   height: 28px;
   border: none;
@@ -117,20 +117,17 @@ margin-bottom: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.wrapper-transaction{
+.wrapper-transaction {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 0.5rem;
 }
-.history .wrapper-items .item button:hover{
-  
- 
+.history .wrapper-items .item button:hover {
   border: 2px solid #ee3311;
-
 }
-.transaction{
+.transaction {
   width: 100%;
 }
 .form {
@@ -140,7 +137,7 @@ margin-bottom: 0.5rem;
   justify-content: space-evenly;
   background-color: #fff;
 }
-.form input{
+.form input {
   width: 100%;
   height: 30px;
   border-radius: 3px;
@@ -170,4 +167,3 @@ margin-bottom: 0.5rem;
   color: red;
   font-size: 0.8rem;
 }
-

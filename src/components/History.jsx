@@ -1,7 +1,7 @@
 import React from 'react'
 import Store from '../store/Store'
 const History = () => {
-  const { amounts, addAmount, saveAmount, removeAmount } = Store()
+  const { amounts, saveAmount, removeAmount } = Store()
   return (
     <div className='history'>
       <h4>History</h4>
@@ -27,10 +27,9 @@ const History = () => {
                 >
                   ❌
                 </button>
-                <div className="wrapper-transaction">
-                <div className='name-transaction'>{amount.text}</div>
-                <div className='amount-transaction'>
-                </div>
+                <div className='wrapper-transaction'>
+                  <div className='name-transaction'>{amount.text}</div>
+                  <div className='amount-transaction'></div>
                   {(+amount.amount).toFixed(2)}
                 </div>
               </div>

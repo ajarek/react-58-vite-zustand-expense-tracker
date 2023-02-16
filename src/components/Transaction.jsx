@@ -3,23 +3,21 @@ import { Form } from '../hooks/Form'
 import Store from '../store/Store'
 
 const Transaction = () => {
-  const {amounts, addAmount, saveAmount}=Store()
+  const { addAmount, saveAmount } = Store()
   const onSubmit = (data) => {
-   const newData={
-    text:data.text,
-    amount:data.amount,
-    date:new Date()
-   }
-   addAmount(newData)
-   saveAmount()
+    const newData = {
+      text: data.text,
+      amount: data.amount,
+      date: new Date(),
+    }
+    addAmount(newData)
+    saveAmount()
   }
- 
+
   return (
     <div className='transaction'>
       <h4>Add new transaction</h4>
-      <Form
-      onSubmit={onSubmit}
-      />
+      <Form onSubmit={onSubmit} />
     </div>
   )
 }

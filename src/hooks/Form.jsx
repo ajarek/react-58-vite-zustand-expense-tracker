@@ -38,7 +38,7 @@ export const Form = ({ onSubmit }) => {
         {...register('text')}
       />
       <p>{errors.text?.message}</p>
-     
+
       <input
         type='number'
         step={'0.01'}
@@ -46,7 +46,7 @@ export const Form = ({ onSubmit }) => {
         {...register('amount')}
       />
       <p>{errors.amount?.message}</p>
-     
+
       <input
         type='submit'
         value={'Add Transaction'}

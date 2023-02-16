@@ -8,17 +8,16 @@ const Store = create((set) => ({
     }))
   },
   removeAmount: (index) =>
-  set((state) => ({
-    amounts: state.amounts.filter((_, i) => i !== index),
-  })),
-  
+    set((state) => ({
+      amounts: state.amounts.filter((_, i) => i !== index),
+    })),
+
   saveAmount: () => {
     set((state) => {
       window.localStorage.setItem('amounts', JSON.stringify(state.amounts))
       return { state }
     })
   },
-  
 }))
 
 export default Store
