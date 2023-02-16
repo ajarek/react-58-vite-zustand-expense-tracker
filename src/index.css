@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .App {
   width: 320px;
   height: 600px;
@@ -83,6 +87,17 @@ body {
 }
 .history {
   overflow: auto;
+}
+.history::-webkit-scrollbar {
+  width: 0.3em;
+}
+.history::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.history::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  outline: 1px solid #eee;
 }
 .history h4,
 .transaction h4 {
